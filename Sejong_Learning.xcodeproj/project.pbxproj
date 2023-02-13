@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC6672812999FB300012E674 /* AlgorithmSolving.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC66727F2999FB300012E674 /* AlgorithmSolving.cpp */; };
+		BC6672852999FC210012E674 /* EightQueen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC6672832999FC210012E674 /* EightQueen.cpp */; };
 		BC85D36B298393A200334D4A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC85D36A298393A200334D4A /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,8 +25,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BC66727F2999FB300012E674 /* AlgorithmSolving.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AlgorithmSolving.cpp; sourceTree = "<group>"; };
+		BC6672802999FB300012E674 /* AlgorithmSolving.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AlgorithmSolving.hpp; sourceTree = "<group>"; };
+		BC6672832999FC210012E674 /* EightQueen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EightQueen.cpp; sourceTree = "<group>"; };
+		BC6672842999FC210012E674 /* EightQueen.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EightQueen.hpp; sourceTree = "<group>"; };
 		BC85D367298393A200334D4A /* Sejong_Learning */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sejong_Learning; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC85D36A298393A200334D4A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BC85D371298394DA00334D4A /* MainHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +45,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC66727D2999FB010012E674 /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				BC66727F2999FB300012E674 /* AlgorithmSolving.cpp */,
+				BC6672802999FB300012E674 /* AlgorithmSolving.hpp */,
+				BC6672822999FC000012E674 /* EightQueen */,
+			);
+			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		BC6672822999FC000012E674 /* EightQueen */ = {
+			isa = PBXGroup;
+			children = (
+				BC6672832999FC210012E674 /* EightQueen.cpp */,
+				BC6672842999FC210012E674 /* EightQueen.hpp */,
+			);
+			path = EightQueen;
+			sourceTree = "<group>";
+		};
 		BC85D35E298393A200334D4A = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				BC85D36A298393A200334D4A /* main.cpp */,
+				BC85D371298394DA00334D4A /* MainHeader.h */,
+				BC66727D2999FB010012E674 /* Algorithm */,
 			);
 			path = Sejong_Learning;
 			sourceTree = "<group>";
@@ -119,7 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC6672812999FB300012E674 /* AlgorithmSolving.cpp in Sources */,
 				BC85D36B298393A200334D4A /* main.cpp in Sources */,
+				BC6672852999FC210012E674 /* EightQueen.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
