@@ -21,7 +21,7 @@
 class EightQueen{
 public:
     EightQueen();
-    ~EightQueen();
+    //~EightQueen();
     
     void solve();           // 이 클래스의 메인 함수
 private:

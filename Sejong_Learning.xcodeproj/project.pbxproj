@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BC6672812999FB300012E674 /* AlgorithmSolving.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC66727F2999FB300012E674 /* AlgorithmSolving.cpp */; };
 		BC6672852999FC210012E674 /* EightQueen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC6672832999FC210012E674 /* EightQueen.cpp */; };
+		BC66728A299A38380012E674 /* TowerOfHanoi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC667288299A38380012E674 /* TowerOfHanoi.cpp */; };
 		BC85D36B298393A200334D4A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC85D36A298393A200334D4A /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,8 @@
 		BC6672802999FB300012E674 /* AlgorithmSolving.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AlgorithmSolving.hpp; sourceTree = "<group>"; };
 		BC6672832999FC210012E674 /* EightQueen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EightQueen.cpp; sourceTree = "<group>"; };
 		BC6672842999FC210012E674 /* EightQueen.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EightQueen.hpp; sourceTree = "<group>"; };
+		BC667288299A38380012E674 /* TowerOfHanoi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TowerOfHanoi.cpp; sourceTree = "<group>"; };
+		BC667289299A38380012E674 /* TowerOfHanoi.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TowerOfHanoi.hpp; sourceTree = "<group>"; };
 		BC85D367298393A200334D4A /* Sejong_Learning */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sejong_Learning; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC85D36A298393A200334D4A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		BC85D371298394DA00334D4A /* MainHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainHeader.h; sourceTree = "<group>"; };
@@ -50,6 +53,7 @@
 			children = (
 				BC66727F2999FB300012E674 /* AlgorithmSolving.cpp */,
 				BC6672802999FB300012E674 /* AlgorithmSolving.hpp */,
+				BC667286299A380F0012E674 /* Tower Of Hanoi */,
 				BC6672822999FC000012E674 /* EightQueen */,
 			);
 			path = Algorithm;
@@ -62,6 +66,15 @@
 				BC6672842999FC210012E674 /* EightQueen.hpp */,
 			);
 			path = EightQueen;
+			sourceTree = "<group>";
+		};
+		BC667286299A380F0012E674 /* Tower Of Hanoi */ = {
+			isa = PBXGroup;
+			children = (
+				BC667288299A38380012E674 /* TowerOfHanoi.cpp */,
+				BC667289299A38380012E674 /* TowerOfHanoi.hpp */,
+			);
+			path = "Tower Of Hanoi";
 			sourceTree = "<group>";
 		};
 		BC85D35E298393A200334D4A = {
@@ -149,6 +162,7 @@
 			files = (
 				BC6672812999FB300012E674 /* AlgorithmSolving.cpp in Sources */,
 				BC85D36B298393A200334D4A /* main.cpp in Sources */,
+				BC66728A299A38380012E674 /* TowerOfHanoi.cpp in Sources */,
 				BC6672852999FC210012E674 /* EightQueen.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
