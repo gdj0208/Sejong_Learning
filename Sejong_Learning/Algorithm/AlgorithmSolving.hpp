@@ -9,8 +9,10 @@
 #define AlgorithmSolving_hpp
 
 #include "MainHeader.h"
+
 #include "EightQueen.hpp"
 #include "TowerOfHanoi.hpp"
+#include "knackSack.hpp"
 
 using namespace std;
 
@@ -41,12 +43,10 @@ public:
 private:
     class EightQueen * eQueen;
     class TowerOfHanoi* tower;
+    class KnacksackProblem* bag;
     
     int algoNum;
     bool run;
-    
-    void solveEightQueen();
-    void solveTowerOfHanoi();
 };
 
 #endif /* AlgorithmSolving_hpp */

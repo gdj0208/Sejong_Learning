@@ -20,8 +20,7 @@ TowerOfHanoi::~TowerOfHanoi(){
 }
 
 void TowerOfHanoi::solve(){
-    
-    moveFloor(totalFloor);  // 문제 풀기 시작
+    moveFloor(totalFloor, 1, 2, 3);  // 문제 풀기 시작
     printf("총 %d번 옮겼습니다!\n", count);
 }
 void TowerOfHanoi::initFloor(){
@@ -32,7 +31,17 @@ void TowerOfHanoi::initFloor(){
         floor[i] = 0;
     }
 }
-void TowerOfHanoi::moveFloor(int floorNum){
+void TowerOfHanoi::moveFloor(int floorNum, int from, int aux, int to){
+    if(floorNum == 1) {printf("%d번 층 %d번 기둥에서 %d번 기둥으로 이동\n", floorNum, from, to); count++; return;}
+    
+    moveFloor(floorNum - 1, from, to, aux);
+    printf("%d번 층 %d번 기둥에서 %d번 기둥으로 이동\n", floorNum, from, to);
+    count++;
+    moveFloor(floorNum - 1, aux, from, to);
+    
+    /*
+    // 구형 코드
+     
     // 1층이 아니면 상위 층 조작
     if(floorNum != 1) {moveFloor(floorNum - 1);}
     
@@ -41,13 +50,13 @@ void TowerOfHanoi::moveFloor(int floorNum){
     // n층 탑 위치 변경
     if(floorNum % 2 == 1) {move = 1 + totalFloor%2;}
     else {move = 1 +(totalFloor + 1)%2;}
-    /*
-     전체 층수가 짝수면 홀수 층은 1칸씩, 짝수 층은 2칸씩 이동
-     전체 층수가 홀수면 홀수 층은 2칸씩, 짝수 층은 1칸씩 이동
+    
+    // 전체 층수가 짝수면 홀수 층은 1칸씩, 짝수 층은 2칸씩 이동
+    // 전체 층수가 홀수면 홀수 층은 2칸씩, 짝수 층은 1칸씩 이동
      
-     이 계산 적용시 n번 탑과 n+3번 탑은 동일한 탑이다.
-     ex) 1번 탑 == 4번 탑 == 7번 탑
-     */
+    // 이 계산 적용시 n번 탑과 n+3번 탑은 동일한 탑이다.
+    // ex) 1번 탑 == 4번 탑 == 7번 탑
+     
     floor[floorNum - 1] += move;
     floor[floorNum - 1] %= 3;
     // 탑 옮기기
@@ -61,5 +70,11 @@ void TowerOfHanoi::moveFloor(int floorNum){
     
     // 1층이 아니면 상위 층 조작
     if(floorNum != 1) {moveFloor(floorNum - 1);}
+     */
 }
-void TowerOfHanoi::printInfo(int floorNum){printf("%d층 %lld번 탑으로 이동\n", floorNum, floor[floorNum - 1] + 1);}
+/*
+ // 구형 코드
+ void TowerOfHanoi::printInfo(int floorNum){
+     printf("%d층 %lld번 탑으로 이동\n", floorNum, floor[floorNum - 1] + 1);
+ }
+ */

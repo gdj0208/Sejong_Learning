@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC4B50DE299CD25D00270EBE /* knackSack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC4B50DC299CD25D00270EBE /* knackSack.cpp */; };
 		BC6672812999FB300012E674 /* AlgorithmSolving.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC66727F2999FB300012E674 /* AlgorithmSolving.cpp */; };
 		BC6672852999FC210012E674 /* EightQueen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC6672832999FC210012E674 /* EightQueen.cpp */; };
 		BC66728A299A38380012E674 /* TowerOfHanoi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC667288299A38380012E674 /* TowerOfHanoi.cpp */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BC4B50DC299CD25D00270EBE /* knackSack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = knackSack.cpp; sourceTree = "<group>"; };
+		BC4B50DD299CD25D00270EBE /* knackSack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = knackSack.hpp; sourceTree = "<group>"; };
 		BC66727F2999FB300012E674 /* AlgorithmSolving.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AlgorithmSolving.cpp; sourceTree = "<group>"; };
 		BC6672802999FB300012E674 /* AlgorithmSolving.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AlgorithmSolving.hpp; sourceTree = "<group>"; };
 		BC6672832999FC210012E674 /* EightQueen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EightQueen.cpp; sourceTree = "<group>"; };
@@ -48,11 +51,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC4B50DB299CD23800270EBE /* knacksackProblem */ = {
+			isa = PBXGroup;
+			children = (
+				BC4B50DC299CD25D00270EBE /* knackSack.cpp */,
+				BC4B50DD299CD25D00270EBE /* knackSack.hpp */,
+			);
+			path = knacksackProblem;
+			sourceTree = "<group>";
+		};
 		BC66727D2999FB010012E674 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
 				BC66727F2999FB300012E674 /* AlgorithmSolving.cpp */,
 				BC6672802999FB300012E674 /* AlgorithmSolving.hpp */,
+				BC4B50DB299CD23800270EBE /* knacksackProblem */,
 				BC667286299A380F0012E674 /* Tower Of Hanoi */,
 				BC6672822999FC000012E674 /* EightQueen */,
 			);
@@ -164,6 +177,7 @@
 				BC85D36B298393A200334D4A /* main.cpp in Sources */,
 				BC66728A299A38380012E674 /* TowerOfHanoi.cpp in Sources */,
 				BC6672852999FC210012E674 /* EightQueen.cpp in Sources */,
+				BC4B50DE299CD25D00270EBE /* knackSack.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

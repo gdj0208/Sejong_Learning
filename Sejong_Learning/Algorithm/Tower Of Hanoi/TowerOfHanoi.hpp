@@ -22,8 +22,8 @@ private:
     unsigned long long count;
     
     void initFloor();
-    void moveFloor(int floorNum);
-    void printInfo(int floorNum);
+    void moveFloor(int floorNum, int from, int aux, int to);
+    //void printInfo(int floorNum);
 };
 
 #endif /* TowerOfHanoi_hpp */

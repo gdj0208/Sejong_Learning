@@ -19,6 +19,7 @@ void AlgorithmSolving::solve(){
         << "0. 프로그램 종료\n"
         << "1. 8퀸\n"
         << "2. 하노이의 탑\n"
+        << "3. 배낭 문제\n"
         << endl
         << "어느 문제를 풀겠습니까? : ";
         
@@ -31,13 +32,18 @@ void AlgorithmSolving::solve(){
                 break;
             case 1:
                 eQueen = new EightQueen;
-                solveEightQueen();
+                eQueen->solve();
                 delete eQueen;
                 break;
             case 2:
                 tower = new TowerOfHanoi;
-                solveTowerOfHanoi();
+                tower->solve();
                 delete tower;
+                break;
+            case 3:
+                bag = new KnacksackProblem;
+                bag->solve();
+                delete bag;
                 break;
             default:
                 printf("제대로 된 입력 부탁 드립니다.");
@@ -46,5 +52,3 @@ void AlgorithmSolving::solve(){
         
     }
 }
-void AlgorithmSolving::solveEightQueen(){eQueen->solve();}
-void AlgorithmSolving::solveTowerOfHanoi(){tower->solve();}
