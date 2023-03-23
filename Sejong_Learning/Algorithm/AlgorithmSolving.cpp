@@ -31,17 +31,17 @@ void AlgorithmSolving::solve(){
                 run = 0;
                 break;
             case 1:
-                eQueen = new EightQueen;
+                eQueen = new EightQueen;        // 8퀸 문제 풀기
                 eQueen->solve();
                 delete eQueen;
                 break;
             case 2:
-                tower = new TowerOfHanoi;
+                tower = new TowerOfHanoi;       // 하노이의 탑 문제 풀기
                 tower->solve();
                 delete tower;
                 break;
             case 3:
-                bag = new KnacksackProblem;
+                bag = new KnacksackProblem;     // 가방 문제 풀기
                 bag->solve();
                 delete bag;
                 break;

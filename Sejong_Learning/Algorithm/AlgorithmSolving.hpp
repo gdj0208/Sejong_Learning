@@ -45,7 +45,7 @@ private:
     class TowerOfHanoi* tower;
     class KnacksackProblem* bag;
     
-    int algoNum;
+    int algoNum;                    // 몇번 문제를 풀 건지 결정
     bool run;
 };
 
