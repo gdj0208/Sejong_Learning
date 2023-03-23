@@ -12,25 +12,31 @@ TowerOfHanoi::TowerOfHanoi(){
     printf("총 원반의 수 : ");
     cin >> totalFloor;      // 원반의 수 입력
     
-    initFloor();            // 층수 정보 초기화
+    // 안쓰는 코드
+    //initFloor();            // 층수 정보 초기화
     count = 0;              // 옮긴 횟수 초기화
 }
 TowerOfHanoi::~TowerOfHanoi(){
-    if(floor != NULL) {delete floor;}
+    // 안쓰는 코드
+    //if(floor != NULL) {delete floor;}
 }
 
 void TowerOfHanoi::solve(){
     moveFloor(totalFloor, 1, 2, 3);  // 문제 풀기 시작
     printf("총 %d번 옮겼습니다!\n", count);
 }
-void TowerOfHanoi::initFloor(){
-    floor = (int*)calloc(totalFloor, sizeof(int));
-    if(floor == NULL) { printf("allocation failed!\n"); return; }
-    
-    for(int i = 0; i < totalFloor; i++){
-        floor[i] = 0;
-    }
-}
+/*
+ // 안쓰는 코드
+ void TowerOfHanoi::initFloor(){
+     
+     floor = (int*)calloc(totalFloor, sizeof(int));
+     if(floor == NULL) { printf("allocation failed!\n"); return; }
+     
+     for(int i = 0; i < totalFloor; i++){
+         floor[i] = 0;
+     }
+ }
+ */
 void TowerOfHanoi::moveFloor(int floorNum, int from, int aux, int to){
     if(floorNum == 1) {printf("%d번 층 %d번 기둥에서 %d번 기둥으로 이동\n", floorNum, from, to); count++; return;}
     

@@ -16,13 +16,13 @@ public:
     
     void solve();
 private:
-    int totalFloor;
-    int *floor;
-    int move;
-    unsigned long long count;
+    int totalFloor;             // 탑의 층수
+    //int *floor;
+    //int move;
+    unsigned long long count;   // 탑 옮긴 횟수
     
-    void initFloor();
-    void moveFloor(int floorNum, int from, int aux, int to);
+    //void initFloor();
+    void moveFloor(int floorNum, int from, int aux, int to);    //탑 옮기기
     //void printInfo(int floorNum);
 };
 
